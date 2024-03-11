@@ -1,3 +1,5 @@
+
+
 body {
   font-family: Roboto, sans-serif;
 }
@@ -19,7 +21,9 @@ h2 {
 /* Properties photo */
 .photo {
   border-radius: 100px;
+  /* Rounding radius */
   border: 3px solid transparent;
+  /* Border properties */
   box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.52);
   object-fit: cover;
 }
@@ -51,53 +55,4 @@ a::after {
   transform: translateY(1.5em);
   border-bottom: 1px solid #dadada;
   width: 300px;
-}
-
-/* Media Query для экранов шириной 1280px и больше */
-@media only screen and (min-width: 1280px) {
-  .container {
-    padding: 0 600px; /* Изменим отступы для более широких экранов */
-    margin-left: 200px;
-  }
-
-  h1 {
-    font-size: 50px; /* Увеличим размер заголовка для крупных экранов */
-  }
-}
-
-/* Media Query для экранов шириной от 720px до 1279px */
-@media only screen and (min-width: 720px) and (max-width: 1279px) {
-  h1 {
-    font-size: 35px; /* Уменьшим заголовок для средних экранов */
-  }
-  
-  h2 {
-    font-size: 20px; /* Уменьшим второй заголовок */
-  }
-}
-
-/* Media Query для экранов шириной от 320px до 719px */
-@media only screen and (min-width: 320px) and (max-width: 719px) {
-  .container {
-    padding: 0 20px; /* Уменьшили отступы для мобильных устройств */
-    margin-left: 0; /* Обнуляем отступ слева для узких экранов */
-  }
-
-  h1 {
-    font-size: 30px; /* Уменьшим заголовок для маленьких экранов */
-  }
-
-  h2 {
-    font-size: 18px; /* Уменьшим второй заголовок для маленьких экранов */
-  }
-
-  .photo {
-    border-radius: 50px; /* Уменьшим радиус скругления фото */
-    width: 120px; /* Уменьшим размер фото */
-    height: 120px;
-  }
-
-  a {
-    margin-bottom: 15px; /* Уменьшим отступ между ссылками */
-  }
 }
