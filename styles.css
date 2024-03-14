@@ -1,0 +1,67 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+}
+
+a:visited {
+    color: rgb(0, 136, 255);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+/* Properties photo */
+.profile-picture {
+    border-radius: 100px;
+    border: 3px solid transparent;
+    box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.52);
+    object-fit: cover;
+  }
+
+.social-links {
+    margin-bottom:50px;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+button {
+    padding: 2px 4px;
+    font-size: 10px;
+    background-color: hsl(212, 7%, 46%);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #222;
+        --text-color: #fff;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --background-color: #fff;
+        --text-color: #222;
+    }
+}
