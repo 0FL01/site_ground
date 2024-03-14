@@ -1,36 +1,39 @@
 <!DOCTYPE html>
-<html>
-<head> 
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Somebody</title>
-	<link rel="stylesheet" href="style.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+<body>
+    <div class="container">
+        		<h1>Andrey Bash</h1>
+        <img src="img/somebody.jpg" alt="Profile Picture" class="profile-picture">
+        <div class="social-links">
 
-<body class="container">
-		<h1>Andrey Bash</h1>
-
-		<div class="item">
-			<img class="photo" src="img/me.png" width="170" height="170" alt="фото">
-		</div>
-
-			<p>Тестирую</p>
-
-			<h2>About me</h2>
-
-			<div class="contacts">
-
-				<a href="http://t.me/OFL01">Telegram</a> 
-				<br>
-				<a href="https://github.com/0FL01">Github</a>
-				<br>
-				<a href="https://youtube.com/@mechuk">YouTube</a>
-				<br>
-				<a href="mailto:mechuk227@bk.ru">Email</a>
-				
-			</div>
-				<button type="button">Rule from life</button>
-				<script type="text/javascript" src="banka.js"></script>
-
+            <title>Hyperlinks with Images</title>
+            <style>
+                img {
+                    width: 30px; /* Устанавливаем ширину изображения */
+                    height: auto; /* Автоматический подбор высоты */
+                    margin-right: 10px; /* Отступ справа от изображения для разделения от ссылки */
+                }
+                a {
+                    margin-bottom: 30px;  /* Добавляем отступ вниз после каждой ссылки */
+                    display: block; /* Превращаем ссылку в блочный элемент, чтобы отступ применялся после ссылки, а не после текста */
+                }
+            </style>
+        </head>
+        <body>
+            <a href="http://t.me/OFL01"><img src="img/telegram.png" alt="Telegram Icon"></a>
+            <a href="https://github.com/0FL01"><img src="img/github.png" alt="GitHub Icon"></a>
+            <a href="https://youtube.com/@mechuk"><img src="img/youtube.png" alt="YouTube Icon"></a>
+            <a href="mailto:mechuk227@bk.ru"><img src="img/email.png" alt="Email Icon"></a>
+        </div>
+        <h2> <button onclick="showNotification()">Rule from life</button>
+    </h2>
+    </div>
+    <script src="script.js"></script>
 </body>
-
 </html>
